@@ -9,31 +9,59 @@ app.get('/', (req, res) => {
 })
 
 app.get('/monday', (req, res) => {
-    res.send(`Monday is the first day of the week and in French it's Lundi`)
+    res.json({
+        "English": "Monday",
+        "weekday": 1,
+        "French": "Lundi"
+    })
 })
 
 app.get('/tuesday', (req, res) => {
-    res.send(`tuesday is the second day of the week and in French it's Mardi`)
+    res.json({
+        "English": "Tuesday",
+        "weekday": 2,
+        "French": "Mardi"
+    })
 })
 
 app.get('/wednesday', (req, res) => {
-    res.send(`wednesday is the third day of the week and in French it's Mercredi`)
+    res.json({
+        "English": "Wednesday",
+        "weekday": 3,
+        "French": "Mercredi"
+    })
 })
 
 app.get('/thursday', (req, res) => {
-    res.send(`thursday is the fourth day of the week and in French it's Jeudi`)
+    res.json({
+        "English": "Thursday",
+        "weekday": 4,
+        "French": "Jeudi"
+    })
 })
 
 app.get('/friday', (req, res) => {
-    res.send(`friday is the fifth day of the week and in French it's Vendredi`)
+    res.json({
+        "English": "Friday",
+        "weekday": 5,
+        "French": "Vendredi"
+    })
 })
 
 app.get('/saturday', (req, res) => {
-    res.send(`saturday is the sixth day of the week and in French it's Samedi`)
+    res.json({
+        "English": "Saturday",
+        "weekday": 6,
+        "French": "Samedi"
+    })
 })
 
 app.get('/sunday', (req, res) => {
-    res.send(`sunday is the seventh and last day of the week and in French it's Dimanche`)
+    res.json({
+        "English": "Sunday",
+        "weekday": 7,
+        "French": "Dimanche"
+    })
 })
 
 app.listen(port, () => {
